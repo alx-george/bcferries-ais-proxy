@@ -1,0 +1,15 @@
+{
+  "name": "bcferries-ais-proxy",
+  "version": "1.0.0",
+  "description": "WebSocket proxy for BC Ferries AIS tracking",
+  "main": "proxy.js",
+  "scripts": {
+    "start": "node proxy.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
