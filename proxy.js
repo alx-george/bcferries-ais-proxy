@@ -15,18 +15,45 @@ const WebSocket = require("ws");
 
 const PORT = process.env.PORT || 3000;
 
-// All BC Ferries MMSIs
+// All BC Ferries MMSIs — verified current fleet (May 2026)
 const BCF_MMSIS = [
-  "316001649","316001650",
-  "316017849","316017850","316017848",
-  "316001653","316001655","316001656","316001660","316001661",
-  "316022501","316022502","316022503","316022504","316022505",
-  "316024001","316024002","316024003","316024004",
-  "316014601","316001690",
-  "316001651","316001654","316001658","316001659",
-  "316001662","316001663","316001664","316001665",
-  "316001666","316001667","316001668","316001669",
-  "316001652","316001657",
+  "316001247",  // Queen of Capilano
+  "316001249",  // Queen of Coquitlam
+  "316001248",  // Queen of Cowichan
+  "316001252",  // Queen of Cumberland
+  "316001255",  // Queen of New Westminster
+  "316001257",  // Queen of Oak Bay
+  "316001262",  // Queen of Surrey
+  "316001265",  // Quinitsa
+  "316001266",  // Quinsam
+  "316030626",  // Salish Eagle
+  "316047943",  // Salish Heron
+  "316030627",  // Salish Orca
+  "316030628",  // Salish Raven
+  "316001267",  // Skeena Queen
+  "316001268",  // Spirit of British Columbia
+  "316001269",  // Spirit of Vancouver Island
+  "316001271",  // Tachek
+  "316030644",  // Baynes Sound Connector
+  "316011409",  // Coastal Celebration
+  "316011408",  // Coastal Inspiration
+  "316011407",  // Coastal Renaissance
+  "316039863",  // Island Aurora
+  "316039864",  // Island Discovery
+  "316047946",  // Island Gwawis
+  "316047555",  // Island Kwigwis
+  "316046934",  // Island K'ulut'a
+  "316046819",  // Island Nagalis
+  "316001236",  // Kahloke
+  "316001235",  // Klitsa
+  "316001237",  // Kwuna
+  "316012774",  // Malaspina Sky
+  "316194000",  // Northern Adventure
+  "316014054",  // Northern Expedition
+  "316036676",  // Northern Sea Wolf
+  "316009547",  // Pune'luxutth
+  "316001244",  // Quadra Queen II
+  "316001245",  // Queen of Alberni
 ];
 
 const NAV_STATUS = {
